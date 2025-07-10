@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Test Final App',
+      title: 'PokeWoke',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         colorScheme: ColorScheme.fromSeed(
@@ -51,14 +51,14 @@ class _WebViewScreenState extends State<WebViewScreen> {
           onPageFinished: (url) => setState(() => isLoading = false),
         ),
       )
-      ..loadRequest(Uri.parse('https://kannasol.xyz/'));
+      ..loadRequest(Uri.parse('https://pokewoke.store'));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Test Final App'),
+        title: Text('PokeWoke'),
         backgroundColor: Color.fromRGBO(33, 150, 243, 1),
         foregroundColor: Colors.white,
         actions: [
