@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Color.fromRGBO(255, 187, 0, 1),
+          seedColor: Color.fromRGBO(255, 200, 0, 1),
           brightness: Brightness.light,
         ),
         useMaterial3: true,
@@ -59,7 +59,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('PokeWoke'),
-        backgroundColor: Color.fromRGBO(255, 187, 0, 1),
+        backgroundColor: Color.fromRGBO(255, 200, 0, 1),
         foregroundColor: Colors.white,
         actions: [
           IconButton(
@@ -74,7 +74,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
           if (isLoading)
             Center(
               child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Color.fromRGBO(255, 187, 0, 1)),
+                valueColor: AlwaysStoppedAnimation<Color>(Color.fromRGBO(255, 200, 0, 1)),
               ),
             ),
         ],
